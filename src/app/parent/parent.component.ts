@@ -15,10 +15,10 @@ export class ParentComponent implements OnInit {
   
   // showMessage:string = '';
 
-  // id!: string;
+  id!: string;
 
   input : any | undefined;
-  id : string = '';
+  Mid : string = '';
   type : string = '';
   price : Number | undefined;
   name : string = '';
@@ -52,7 +52,7 @@ export class ParentComponent implements OnInit {
   MovieData(allMovie : movie): void {
     this.movie = allMovie;
     console.log(this.movie);
-    this.id = this.movie.Movieid;
+    this.Mid = this.movie.Movieid;
     this.type = this.movie.TypeMovie;
     this.price = this.movie.MoviePrice;
     this.name = this.movie.NameMovie ?? '';
