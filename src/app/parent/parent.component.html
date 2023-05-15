@@ -1,0 +1,40 @@
+<!-- โค้ดที่ comment คือ Workshop Train -->
+
+<!-- <p>parent works!</p> -->
+
+<!-- <input [(ngModel)]="id">
+<button (click)="getMovie()"> click </button> -->
+
+<!-- <div>
+    <h1>Parent Title</h1>
+    <p>body text...</p>
+    <app-child [reviews]="books[0].bookReviews"></app-child>
+</div> -->
+
+<!-- <div>
+    <h1>Parent Title</h1>
+    <p> {{ showMessage }} </p>
+    <app-child (notify)="onNotifyClicked($event)"></app-child>
+</div> -->
+
+<form [formGroup]="input" (ngSubmit)="submit()">
+        <div>
+             <input style="font-size: 100%; margin-top: 2%;" formControlName="Id" (keyup)="submit()">
+        </div>
+            <app-child (Data)="MovieData($event)" [idMovie]="id"></app-child>
+</form>
+
+<table style="margin-top: 5%;">
+    <tr>
+        <th>NameMovie</th>
+        <th>TypeMovie</th>
+        <th>MoviePrice</th>
+        <th>MovieId</th>
+    </tr>
+    <tr>
+        <td>{{ name }}</td>
+        <td>{{ type }}</td>
+        <td>{{ price }}</td>
+        <td>{{ id }}</td>
+    </tr>
+</table>

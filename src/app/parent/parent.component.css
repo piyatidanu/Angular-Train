@@ -1,0 +1,23 @@
+/* .tableMovie{
+    font-size: 150%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: rebeccapurple;
+} */
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table {
+    width: 50%;
+}
+th {
+    font-size: 110%;
+    height: 40px;
+    text-align: center;
+}
+td{
+    height: 30px;
+    text-align: center;
+}
